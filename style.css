@@ -52,7 +52,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url(../img/hero-img.jpg);
+  background-image: url("../img/hero-img.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(30%);
