@@ -198,6 +198,14 @@ body {
     text-align: center;
   }
 
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .offcanvas {
+    max-width: 70% !important;
+  }
+
   /* ---------- Home Section ---------- */
 
   /* Home - Header */
