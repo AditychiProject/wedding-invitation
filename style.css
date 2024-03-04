@@ -160,6 +160,56 @@ body {
   font-weight: 500;
 }
 
+/* ---------- Info Section ---------- */
+
+/* Info - Location */
+.info {
+  color: white;
+  background-color: var(--background);
+  padding: 160px 0 128px;
+}
+
+.info h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+/* Info - Time */
+.info .card {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999;
+}
+
+.info .card-body {
+  font-size: 14px !important;
+}
+
+.info .card-footer {
+  font-size: 14px !important;
+  border-top: 1px solid #999;
+}
+
+/* Info - Time */
+.info .alamat {
+  font-weight: 500;
+}
+
+.info .gmap {
+  max-width: 600px;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 /* ------------------------- Mobile Phone ------------------------- */
 @media (max-width: 576px) {
   /* ---------- Hero Section ---------- */
@@ -225,6 +275,7 @@ body {
 
   /* Home - Couple */
   .home .icon-and {
+    background: none;
     transform: translateX(-50%) translateY(252px);
   }
 
@@ -243,5 +294,22 @@ body {
 
   .home .mempelai-wanita {
     margin-top: 120px;
+  }
+
+  /* ---------- Info Section ---------- */
+
+  /* Info - Location */
+  .info h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .info p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .info .alamat {
+    margin-bottom: 20px;
   }
 }
