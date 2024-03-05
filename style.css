@@ -177,6 +177,16 @@ body {
   color: var(--pink);
 }
 
+.info .alamat {
+  font-weight: 500;
+}
+
+.info .gmap {
+  max-width: 600px;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 /* Info - Time */
 .info .card {
   color: white !important;
@@ -200,15 +210,147 @@ body {
   border-top: 1px solid #999;
 }
 
-/* Info - Time */
-.info .alamat {
-  font-weight: 500;
+/* ---------- Story Section ---------- */
+
+/* Story - Header */
+.story {
+  padding: 160px 0 128px;
 }
 
-.info .gmap {
+.story h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.story .tagline {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.story .description {
   max-width: 600px;
-  width: 100%;
-  aspect-ratio: 16/9;
+  font-size: 14px;
+  color: #444;
+  line-height: 2;
+  margin: auto;
+}
+
+/* Story - Timeline */
+.timeline {
+  position: relative;
+  list-style: none;
+  margin-top: 16px;
+  padding: 24px 0;
+}
+
+.timeline::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: #ccc;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+  background-image: url("img/adit.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  position: relative;
+  float: left;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #ccc;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 81px;
+  right: -13px;
+  border-top: 14px solid transparent;
+  border-right: 0 solid white;
+  border-bottom: 14px solid transparent;
+  border-left: 14px solid white;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  right: auto;
+  left: -13px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline .timeline-heading h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.timeline .timeline-heading span {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.timeline .timeline-body p {
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 0px;
 }
 
 /* ------------------------- Mobile Phone ------------------------- */
@@ -312,5 +454,67 @@ body {
 
   .info .alamat {
     margin-bottom: 20px;
+  }
+
+  /* ---------- Story Section ---------- */
+
+  /* Timeline */
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-img {
+    top: 16px;
+    left: 15px;
+    margin-left: 45px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100%-200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-right-width: 15px;
+    border-left-width: 0;
+    top: 40px;
+    right: auto;
+    left: -15px;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-right-width: 14px;
+    border-left-width: 0;
+    top: 41px;
+    right: auto;
+    left: -13px;
+  }
+
+  .timeline li .timeline-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    padding: 24px;
+  }
+
+  .timeline .timeline-heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .timeline .timeline-heading span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .timeline .timeline-body p {
+    font-size: 12px;
+    margin-bottom: 0;
   }
 }
