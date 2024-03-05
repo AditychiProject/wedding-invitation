@@ -353,6 +353,42 @@ body {
   margin-bottom: 0px;
 }
 
+/* ---------- Gallery ---------- */
+.gallery {
+  background-color: #f5f5f5;
+  padding: 160px 0 128px;
+}
+
+/* Gallery - Header */
+.gallery h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.gallery .tagline {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.gallery .description {
+  max-width: 600px;
+  font-size: 14px;
+  color: #444;
+  line-height: 2;
+  margin: auto;
+}
+
+/* Gallery - Images */
+.gallery-thumbnail {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ------------------------- Media Query - Mobile Phone ------------------------- */
 @media (max-width: 576px) {
   /* ---------- Hero Section ---------- */
