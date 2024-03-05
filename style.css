@@ -353,7 +353,7 @@ body {
   margin-bottom: 0px;
 }
 
-/* ------------------------- Mobile Phone ------------------------- */
+/* ------------------------- Media Query - Mobile Phone ------------------------- */
 @media (max-width: 576px) {
   /* ---------- Hero Section ---------- */
   .hero h1 {
@@ -458,7 +458,7 @@ body {
 
   /* ---------- Story Section ---------- */
 
-  /* Timeline */
+  /* Story - Timeline */
   .timeline::before {
     left: 60px;
   }
