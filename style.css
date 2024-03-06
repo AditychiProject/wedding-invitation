@@ -425,7 +425,7 @@ body {
   /* Navbar - Links */
   .my-navbar {
     background-color: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: none;
+    /* backdrop-filter: none; */
   }
 
   .my-navbar .nav-link {
